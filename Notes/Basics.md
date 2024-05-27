@@ -1,0 +1,1 @@
+- When setting up a react project, depending on which verison you are running 17 or 18, if you are using the 17th version of React, then you would need to include a babel element inside of your main script tag, and creating 2 script tags that are importated which contain the react development version and the react dom 
