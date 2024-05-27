@@ -1,1 +1,3 @@
 - When setting up a react project, depending on which verison you are running 17 or 18, if you are using the 17th version of React, then you would need to include a babel element inside of your main script tag, and creating 2 script tags that are importated which contain the react development version and the react dom 
+- React lets the code to be composed and helps you create sustainable code that is readible by react developers
+-React is Declaritive and meaning that it does much of the work for you and not require deep knowledge of the user to input and output commands.
