@@ -1,3 +1,13 @@
 - When setting up a react project, depending on which verison you are running 17 or 18, if you are using the 17th version of React, then you would need to include a babel element inside of your main script tag, and creating 2 script tags that are importated which contain the react development version and the react dom 
 - React lets the code to be composed and helps you create sustainable code that is readible by react developers
 -React is Declaritive and meaning that it does much of the work for you and not require deep knowledge of the user to input and output commands.
+- React is a JavaScript library for building user interfaces, primarily for single-page applications.
+- It uses a component-based architecture, where components are reusable and can manage their own state.
+- React uses JSX for templating instead of regular JavaScript. JSX looks like HTML and can be mixed with JavaScript expressions.
+- Data flows unidirectionally in React applications, typically using state and props to manage and pass data.
+- React creates a virtual DOM in memory, which represents the DOM state more efficiently and updates the browser's DOM in a more performance-optimized way.
+- For state management in larger applications, libraries like Redux or Context API are commonly used.
+- React also supports hooks (from version 16.8 onwards), which allow you to use state and other React features without writing a class.
+- You could use JSX in order for storing tags and elements in a varible for example
+- JSX Returns a javascript object and when you combine with react it returns in composable code
+- In order to render in a mix of tags in a single line you would need a div for the child/parent code
