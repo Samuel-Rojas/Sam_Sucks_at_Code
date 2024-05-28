@@ -11,3 +11,6 @@
 - You could use JSX in order for storing tags and elements in a varible for example
 - JSX Returns a javascript object and when you combine with react it returns in composable code
 - In order to render in a mix of tags in a single line you would need a div for the child/parent code
+- Try to use createRoot Instead, when on version 18
+- You cannot have to child elements in JSX
+- Using .render over .append is stronger because .render takes the js object that .append usually returns and spits out html/css code 
