@@ -14,3 +14,9 @@
 - Try to use createRoot Instead, when on version 18
 - You cannot have to child elements in JSX
 - Using .render over .append is stronger because .render takes the js object that .append usually returns and spits out html/css code 
+- Surrounding varibales inside of your html code in react will allow for the intergration of js into the text of html
+- Anything that you put in curly braces can be read as javascript code
+
+Props:
+- To use the props object instead of the hardcoded values you use --> props.method because you are trying to access the elements inside of the object 
+- If you decide to destructurize the props you would need to have the varible names like constructors in java and remove the . operator in order for the props to be defined
