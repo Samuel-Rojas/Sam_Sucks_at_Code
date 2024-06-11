@@ -11,3 +11,9 @@ They are not the best ways to display images on the web, or using the contents o
 What is a CSS Preprocessor ?
 Essentially the middle man from converting your css framework code to vanilla css code. The reason is because normally browsers cannot read the framework and only transcript vanilla css.
 
+CSS ADVANCED SELECTORS:
+Three different selectors:
+1. > - child combinator, which specifies exactly which child element you want to change in your hmtl markup (main > div > div{}) --> this would grab the div with the class of "wrapper" that is a child of the main element.
+2. + - adjacent sibling combinator, which specifies that the element that is directly after another element in the DOM tree. (div + p{}) --> this would grab the first p element that is immediately preceded by a div element.
+3. ~ - general sibling combinator, which specifies that the element that is anywhere after another element in the DOM tree. (div ~ p{}) --> this would grab all p elements that are immediately preceded by a div element.
+
