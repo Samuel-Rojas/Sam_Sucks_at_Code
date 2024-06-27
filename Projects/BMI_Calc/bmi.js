@@ -11,11 +11,12 @@ const calculateBMI = () => {
     const getHeightValue = heightInput.value;
 
     //logic
-    let bmiValue = getHeightValue/ (getWeightValue * getWeightValue);
+    let bmiValue = getWeightValue/ (getHeightValue * getHeightValue);
     
-    result.innerHTML = `Your BMI is <strong>${bmiValue}</strong>`;
-    console.log(getHeightValue);
+    
+    result.innerHTML = `Your BMI is <strong>${bmiValue.toFixed(2)}</strong>`;
     console.log(getWeightValue);
+    console.log(getHeightValue);
 
 }
 

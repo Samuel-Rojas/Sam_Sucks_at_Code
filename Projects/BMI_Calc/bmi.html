@@ -9,13 +9,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
     <div class="container">
-    <h1>BMI Calculator</h1>
     <form class="form">
-        <input placeholder="Enter Weight (kg)" class="input" type="number" id="weight" required>
-        <input placeholder="Enter Height (m)" class="input" type="number" id="height" required>
+
+        <label for="weight">Weight</label>
+        <select id="weight-unit">
+            <option>select option</option>
+            <option value="kg">kg</option>
+            <option value="lbs">Lbs</option>
+        </select>
+        <input placeholder="Enter Weight" class="input" type="number" id="weight" required>
+
+        <label for="height">Height</label>
+        <select id="height-unit">
+            <option>select option</option>
+            <option value="feet">ft</option>
+            <option value="meters">m</option>
+            <option value="center meters">cm</option>
+        </select>
+        <input placeholder="Enter Height" class="input" type="number" id="height" required>
         <button id="btn-submit">Submit</button>
+
       </form>
 
     <div id="result">
