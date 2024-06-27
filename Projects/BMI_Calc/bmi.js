@@ -21,5 +21,9 @@ const calculateBMI = () => {
 
 //Event Listener Goes here 
 
+buttonSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    calculateBMI();
 
+});
 
