@@ -11,6 +11,7 @@
 		0B3241DE2C30751B00B2EAB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3241DD2C30751B00B2EAB1 /* ContentView.swift */; };
 		0B3241E02C30751C00B2EAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */; };
 		0B3241E32C30751C00B2EAB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3241E22C30751C00B2EAB1 /* Preview Assets.xcassets */; };
+		0BF560F22C307BF70045AD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF560F12C307BF70045AD5F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0B3241DD2C30751B00B2EAB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B3241E22C30751C00B2EAB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BF560F12C307BF70045AD5F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0B3241DB2C30751B00B2EAB1 /* MyToDoListApp.swift */,
 				0B3241DD2C30751B00B2EAB1 /* ContentView.swift */,
+				0BF560F12C307BF70045AD5F /* Main.storyboard */,
 				0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */,
 				0B3241E12C30751C00B2EAB1 /* Preview Content */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF560F22C307BF70045AD5F /* Main.storyboard in Resources */,
 				0B3241E32C30751C00B2EAB1 /* Preview Assets.xcassets in Resources */,
 				0B3241E02C30751C00B2EAB1 /* Assets.xcassets in Resources */,
 			);
