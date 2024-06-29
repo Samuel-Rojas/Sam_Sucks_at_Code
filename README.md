@@ -1,3 +1,4 @@
-# Frontend_Dev
+# Full-Stack
 
-This is Where all my projects are located when associated with frontend development, but I have another Repo for backend development, Mobile Development, and Full Stack development.
+
+In this repo, this contains all the projects that I have done, which would contain projects from Javascript, Swift, and Python. This is intended to be where I have all my projects from frontend to backend, AI Machine Learning, and Even Mobile Development 
