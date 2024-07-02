@@ -1,53 +1,123 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    background-color: #fffbeb; /* Light beige background */
-    font-family: sans-serif;
-  }
-  
-  .hero,
-  .monster {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Rounded corners */
-    margin: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
-  }
-  
-  .habit-tracker {
-    background-color: #f5f5f5; /* Light gray background */
-    padding: 20px;
-    border-radius: 5px; /* Slightly rounded corners */
-  }
-  
-  .habit-tracker h2 {
-    font-size: 20px;
-    color: #333; /* Dark gray text */
-    text-decoration: underline; /* Underline decoration */
-  }
-  
-  .habit-tracker ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .habit-tracker li {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  
-  .progress {
-    width: 400px;
-    height: 20px;
-    background-color: #ddd; /* Light gray background for progress bar container */
-  }
-  
-  /* Additional styles for the progress bar fill (replace with your image or adjust for HTML5 progress element) */
-  .progress::after {
-    content: "";
-    display: block;
-    width: 0; /* Initial width 0% */
-    height: 100%;
-    background-image: url("progress_fill.png"); /* Replace with your progress fill image */
-    background-repeat: repeat-x; /* Repeat image horizontally */
-    transition: width 1s ease-in-out; /* Smooth transition for width changes */
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Common Container Styling */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Hero and Monster Sections */
+.hero, .monster {
+  margin-bottom: 20px;
+}
+
+select, img {
+  display: block;
+  margin: 10px auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Habit Tracker Styling */
+.habit-tracker h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.habit-tracker ul {
+  list-style: none;
+}
+
+.habit-tracker li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Progress Bar Styling */
+.progress {
+  margin-top: 20px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  appearance: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50;
+  transition: width 0.2s ease;
+}
+
+/* Rewards Section Styling */
+.rewards {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #4caf50;
+}
+
+#reward-message {
+  font-weight: bold;
+}
+
+/* Add some hover effects */
+select:hover, img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+
+/* Reset Button Styling */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

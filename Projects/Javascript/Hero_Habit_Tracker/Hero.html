@@ -7,34 +7,57 @@
     <link rel="stylesheet" href="Hero.css">
 </head>
 <body>
+    <div class="container">
     <div class="hero">
-        <!--Implement the image tag for the hero and give option to user-->
+        <h2>Select Your Hero</h2>
+        <select id="hero-select">
+            <option value="Assets/spiderman.png">Hero 1</option>
+            <option value="Assets/batman.png">Hero 2</option>
+            <option value="Assets/basic_hero.png">Hero 3</option>
+        </select>
+        <img id="hero-image" src="hero1.png" alt="Hero">
     </div>
     <div class="monster">
-        <!--Implement the image tag for the monster and give option to user-->
+        <h2>Select Your Monster</h2>
+        <select id="monster-select">
+            <option value="Assets/monster_one.png">Monster 1</option>
+            <option value="Assets/monster_two.png">Monster 2</option>
+            <option value="Assets/Monster Avatar.png">Monster 3</option>
+        </select>
+        <img id="monster-image" src="monster1.png" alt="Monster">
     </div>
+    
     <div class="habit-tracker">
         <h2 class="habit-tracker">Daily Habits</h2>
         <ul>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" id="habit_one">
                 <label for="habit_one">Exercise for 45 Minutes</label>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" id="habit-two">
                 <label for="habit_two">Eat a Healthy Breakfeast</label>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" id="habit_three">
                 <label for="habit_three">Meditate for 10 mins</label> 
             </li>
         </ul>
     </div>
     <div class="progress">
         <!--Figure out how to make a progress bar to keep track-->
+        <h3>Progress</h3>
+        <progress id="habit-progress" value="0" max="3"></progress>
     </div>
     <div class="rewards">
         <!--Display rewards when monster is defeated-->
+        <h3>Rewards</h3>
+        <div id="reward-message"></div>
+    </div>
+
+    <div class="container">
+        <button id="reset-button">Reset and Play Again</button>
+    </div>
     </div>
     <script src="Hero.js"></script>
 </body>
