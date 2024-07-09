@@ -1,7 +1,7 @@
 html{
     padding: 0px;
     margin: 0px;
-    background-color: darkgray;
+    background-image: linear-gradient(to left, yellow, purple );
 }
 
 #container{
@@ -13,35 +13,87 @@ html{
 #title-text{
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #fffbff;
+   
 }
+
 
 
 
 #title-task{
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    color: #fffbff;
 }
 
 
 #input-field{
     display: flex;
     justify-content: center;
-    border: 2px solid black;
     padding: 20px;
-    margin: 20px;
+    margin-left: 50px;
 }
 
 
-#display-container{
-    border: 2px solid black;
+
+#input-tab{
+    margin-right: 10px ;
+    height: 25px;
+    width: 200px;
+    padding: 0 15px;
+    line-height: 10px;
+    background-color: blanchedalmond;
+    border: 10px groove rgb(187, 171, 171);
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+#input-tab:hover{
+    transform: translateX(-10px)
+}
+
+#add-task {
+    border-radius: 15px;
+    font-family: 'Gill Sans',sans-serif;
+    color: rgb(18, 3, 3);
+    background-image: linear-gradient(to right, yellow,purple);
+    border: 3px outset rgb(187, 171, 171);
+    transition: transform 0.5s;
+}
+#add-task:hover{
+    transform: translateY(-15px);
+    
+}
+.task-title{
+    margin-left: 20px;
+}
+
+#delete-input{
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-family: 'Gill Sans',sans-serif;
+    color: rgb(18, 3, 3);
+    background-image: linear-gradient(to right, yellow,purple);
+    border: 3px outset rgb(187, 171, 171);
+    transition: transform 0.5s;
+}
+
+#delete-input:hover{
+    transform: translateY(-15px);
 }
 
 
-input[type="checkbox"]{
-    line-height: 0;
+
+.task-item{
+    display: flex;
+    justify-content: center;
+   
 }
+
+
 
 
 
