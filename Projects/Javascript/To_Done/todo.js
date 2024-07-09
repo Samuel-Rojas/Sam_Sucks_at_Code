@@ -1,7 +1,7 @@
 const inputField = document.getElementById("input-tab")
 const addTaskBtn = document.getElementById("add-task")
 const displayContainer = document.getElementById('display-container')
-const taskTitle = document.getElementById('task-title')
+// const taskTitle = document.getElementById('task-title')
 // const taskCheckbox = document.getElementById('task-checkbox')
 const taskTemplate = document.getElementById('task-template')
 
@@ -16,14 +16,17 @@ const addTask = () =>{
 
     //HTML Code that We want to display
     let displayContent = `
-    <input type="checkbox" style="display: inline-block;">
-    <h2 id="task-title" ${isCompleted ? 'style="text-decoration: line-through;"' : ''}>${userInput}</h2>
-    <button>Delete</button>`
+    <h2 class="task-title">
+    <input type="checkbox" id="isComplete-check">${userInput}<button id="delete-input">Delete</button>
+    </h2>`
+   
    
 
     //Creates and assigns new element to display code
     let newTaskElement = document.createElement('div')
     newTaskElement.innerHTML = displayContent
+    //Assign a class name in order to layout css
+    newTaskElement.className = 'task-item'
 
     //Display to DOM
     displayContainer.insertBefore(newTaskElement, displayContainer.firstChild)
