@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void) {
-    //Hello World
-    printf("%c", "Samuel");
-    printf("Samuel is my name");
+    char name[10];
 
+   printf("What is your name ?");
+    scanf("%s",&name);
+    printf("Your name is %s", name);
 }
