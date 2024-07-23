@@ -1,5 +1,5 @@
 import React from "react"
-import '/src/Counter.css'
+
 
 export default function Counter() {
 
@@ -19,15 +19,15 @@ const [count, setCount] = React.useState(0);
 
     
     return(
-        <>
-            <p>Current Integer: {count} </p>
+        <div className="counter-container">
+            <h1 className="title-counter">Current Integer: {count} </h1>
             <button className="incrementBtn" type="button" onClick={increment}> 
-
+                Add
             </button>
             <button className="decrementBtn" type="button" onClick={decrement}>
-
+                Subtract
             </button>
 
-        </>
+        </div>
     )
 }
