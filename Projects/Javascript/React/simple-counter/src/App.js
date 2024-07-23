@@ -1,14 +1,13 @@
 
 
 import React from "react"
+//import './Counter.css'
 
-import AddBtn from "./components/Addbtn";
-import DeleteBtn from "./components/DeleteBtn";
+import Counter from "./components/Counter";
 function App() {
   return (
     <>
-    <AddBtn />
-    <DeleteBtn />
+    <Counter />
     </>
   );
 }
