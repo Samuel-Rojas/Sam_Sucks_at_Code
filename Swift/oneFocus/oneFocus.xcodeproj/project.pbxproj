@@ -7,24 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B3241DC2C30751B00B2EAB1 /* MyToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3241DB2C30751B00B2EAB1 /* MyToDoListApp.swift */; };
-		0B3241DE2C30751B00B2EAB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3241DD2C30751B00B2EAB1 /* ContentView.swift */; };
-		0B3241E02C30751C00B2EAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */; };
-		0B3241E32C30751C00B2EAB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3241E22C30751C00B2EAB1 /* Preview Assets.xcassets */; };
-		0BF560F22C307BF70045AD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF560F12C307BF70045AD5F /* Main.storyboard */; };
+		0B7530EC2C52F9F6007CC8D2 /* oneFocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */; };
+		0B7530EE2C52F9F6007CC8D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */; };
+		0B7530F02C52F9F8007CC8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */; };
+		0B7530F42C52F9F8007CC8D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B3241D82C30751B00B2EAB1 /* MyToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B3241DB2C30751B00B2EAB1 /* MyToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoListApp.swift; sourceTree = "<group>"; };
-		0B3241DD2C30751B00B2EAB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B3241E22C30751C00B2EAB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0BF560F12C307BF70045AD5F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0B7530E82C52F9F6007CC8D2 /* oneFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneFocusApp.swift; sourceTree = "<group>"; };
+		0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B7530F12C52F9F8007CC8D2 /* oneFocus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oneFocus.entitlements; sourceTree = "<group>"; };
+		0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B3241D52C30751B00B2EAB1 /* Frameworks */ = {
+		0B7530E52C52F9F6007CC8D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B3241CF2C30751B00B2EAB1 = {
+		0B7530DF2C52F9F6007CC8D2 = {
 			isa = PBXGroup;
 			children = (
-				0B3241DA2C30751B00B2EAB1 /* MyToDoList */,
-				0B3241D92C30751B00B2EAB1 /* Products */,
+				0B7530EA2C52F9F6007CC8D2 /* oneFocus */,
+				0B7530E92C52F9F6007CC8D2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0B3241D92C30751B00B2EAB1 /* Products */ = {
+		0B7530E92C52F9F6007CC8D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B3241D82C30751B00B2EAB1 /* MyToDoList.app */,
+				0B7530E82C52F9F6007CC8D2 /* oneFocus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B3241DA2C30751B00B2EAB1 /* MyToDoList */ = {
+		0B7530EA2C52F9F6007CC8D2 /* oneFocus */ = {
 			isa = PBXGroup;
 			children = (
-				0B3241DB2C30751B00B2EAB1 /* MyToDoListApp.swift */,
-				0B3241DD2C30751B00B2EAB1 /* ContentView.swift */,
-				0BF560F12C307BF70045AD5F /* Main.storyboard */,
-				0B3241DF2C30751C00B2EAB1 /* Assets.xcassets */,
-				0B3241E12C30751C00B2EAB1 /* Preview Content */,
+				0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */,
+				0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */,
+				0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */,
+				0B7530F12C52F9F8007CC8D2 /* oneFocus.entitlements */,
+				0B7530F22C52F9F8007CC8D2 /* Preview Content */,
 			);
-			path = MyToDoList;
+			path = oneFocus;
 			sourceTree = "<group>";
 		};
-		0B3241E12C30751C00B2EAB1 /* Preview Content */ = {
+		0B7530F22C52F9F8007CC8D2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0B3241E22C30751C00B2EAB1 /* Preview Assets.xcassets */,
+				0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +72,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B3241D72C30751B00B2EAB1 /* MyToDoList */ = {
+		0B7530E72C52F9F6007CC8D2 /* oneFocus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3241E62C30751C00B2EAB1 /* Build configuration list for PBXNativeTarget "MyToDoList" */;
+			buildConfigurationList = 0B7530F72C52F9F8007CC8D2 /* Build configuration list for PBXNativeTarget "oneFocus" */;
 			buildPhases = (
-				0B3241D42C30751B00B2EAB1 /* Sources */,
-				0B3241D52C30751B00B2EAB1 /* Frameworks */,
-				0B3241D62C30751B00B2EAB1 /* Resources */,
+				0B7530E42C52F9F6007CC8D2 /* Sources */,
+				0B7530E52C52F9F6007CC8D2 /* Frameworks */,
+				0B7530E62C52F9F6007CC8D2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyToDoList;
-			productName = MyToDoList;
-			productReference = 0B3241D82C30751B00B2EAB1 /* MyToDoList.app */;
+			name = oneFocus;
+			productName = oneFocus;
+			productReference = 0B7530E82C52F9F6007CC8D2 /* oneFocus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B3241D02C30751B00B2EAB1 /* Project object */ = {
+		0B7530E02C52F9F6007CC8D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					0B3241D72C30751B00B2EAB1 = {
+					0B7530E72C52F9F6007CC8D2 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 0B3241D32C30751B00B2EAB1 /* Build configuration list for PBXProject "MyToDoList" */;
+			buildConfigurationList = 0B7530E32C52F9F6007CC8D2 /* Build configuration list for PBXProject "oneFocus" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +112,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 0B3241CF2C30751B00B2EAB1;
-			productRefGroup = 0B3241D92C30751B00B2EAB1 /* Products */;
+			mainGroup = 0B7530DF2C52F9F6007CC8D2;
+			productRefGroup = 0B7530E92C52F9F6007CC8D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B3241D72C30751B00B2EAB1 /* MyToDoList */,
+				0B7530E72C52F9F6007CC8D2 /* oneFocus */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B3241D62C30751B00B2EAB1 /* Resources */ = {
+		0B7530E62C52F9F6007CC8D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BF560F22C307BF70045AD5F /* Main.storyboard in Resources */,
-				0B3241E32C30751C00B2EAB1 /* Preview Assets.xcassets in Resources */,
-				0B3241E02C30751C00B2EAB1 /* Assets.xcassets in Resources */,
+				0B7530F42C52F9F8007CC8D2 /* Preview Assets.xcassets in Resources */,
+				0B7530F02C52F9F8007CC8D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B3241D42C30751B00B2EAB1 /* Sources */ = {
+		0B7530E42C52F9F6007CC8D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3241DE2C30751B00B2EAB1 /* ContentView.swift in Sources */,
-				0B3241DC2C30751B00B2EAB1 /* MyToDoListApp.swift in Sources */,
+				0B7530EE2C52F9F6007CC8D2 /* ContentView.swift in Sources */,
+				0B7530EC2C52F9F6007CC8D2 /* oneFocusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0B3241E42C30751C00B2EAB1 /* Debug */ = {
+		0B7530F52C52F9F8007CC8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -201,18 +199,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		0B3241E52C30751C00B2EAB1 /* Release */ = {
+		0B7530F62C52F9F8007CC8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,68 +254,83 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0B3241E72C30751C00B2EAB1 /* Debug */ = {
+		0B7530F82C52F9F8007CC8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oneFocus/oneFocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyToDoList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"oneFocus/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.MyToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0B3241E82C30751C00B2EAB1 /* Release */ = {
+		0B7530F92C52F9F8007CC8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = oneFocus/oneFocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyToDoList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"oneFocus/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.MyToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,25 +340,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B3241D32C30751B00B2EAB1 /* Build configuration list for PBXProject "MyToDoList" */ = {
+		0B7530E32C52F9F6007CC8D2 /* Build configuration list for PBXProject "oneFocus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B3241E42C30751C00B2EAB1 /* Debug */,
-				0B3241E52C30751C00B2EAB1 /* Release */,
+				0B7530F52C52F9F8007CC8D2 /* Debug */,
+				0B7530F62C52F9F8007CC8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B3241E62C30751C00B2EAB1 /* Build configuration list for PBXNativeTarget "MyToDoList" */ = {
+		0B7530F72C52F9F8007CC8D2 /* Build configuration list for PBXNativeTarget "oneFocus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B3241E72C30751C00B2EAB1 /* Debug */,
-				0B3241E82C30751C00B2EAB1 /* Release */,
+				0B7530F82C52F9F8007CC8D2 /* Debug */,
+				0B7530F92C52F9F8007CC8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B3241D02C30751B00B2EAB1 /* Project object */;
+	rootObject = 0B7530E02C52F9F6007CC8D2 /* Project object */;
 }

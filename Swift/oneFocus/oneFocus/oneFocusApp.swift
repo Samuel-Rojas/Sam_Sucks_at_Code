@@ -1,14 +1,14 @@
 //
-//  MyToDoListApp.swift
-//  MyToDoList
+//  oneFocusApp.swift
+//  oneFocus
 //
-//  Created by Samuel Rojas on 6/29/24.
+//  Created by Samuel Rojas on 7/25/24.
 //
 
 import SwiftUI
 
 @main
-struct MyToDoListApp: App {
+struct oneFocusApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
