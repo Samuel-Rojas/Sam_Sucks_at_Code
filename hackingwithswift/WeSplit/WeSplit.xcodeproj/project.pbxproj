@@ -7,23 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B7530EC2C52F9F6007CC8D2 /* oneFocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */; };
-		0B7530EE2C52F9F6007CC8D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */; };
-		0B7530F02C52F9F8007CC8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */; };
-		0B7530F42C52F9F8007CC8D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */; };
+		0B8C87BC2C57FA3300653760 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C87BB2C57FA3300653760 /* WeSplitApp.swift */; };
+		0B8C87BE2C57FA3300653760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C87BD2C57FA3300653760 /* ContentView.swift */; };
+		0B8C87C02C57FA3400653760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8C87BF2C57FA3400653760 /* Assets.xcassets */; };
+		0B8C87C32C57FA3400653760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8C87C22C57FA3400653760 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B7530E82C52F9F6007CC8D2 /* oneFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneFocusApp.swift; sourceTree = "<group>"; };
-		0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B7530F12C52F9F8007CC8D2 /* oneFocus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oneFocus.entitlements; sourceTree = "<group>"; };
-		0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B8C87B82C57FA3300653760 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8C87BB2C57FA3300653760 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
+		0B8C87BD2C57FA3300653760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B8C87BF2C57FA3400653760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B8C87C22C57FA3400653760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B7530E52C52F9F6007CC8D2 /* Frameworks */ = {
+		0B8C87B52C57FA3300653760 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,86 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B7530DF2C52F9F6007CC8D2 = {
+		0B8C87AF2C57FA3300653760 = {
 			isa = PBXGroup;
 			children = (
-				0B7530EA2C52F9F6007CC8D2 /* oneFocus */,
-				0B7530E92C52F9F6007CC8D2 /* Products */,
+				0B8C87BA2C57FA3300653760 /* WeSplit */,
+				0B8C87B92C57FA3300653760 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0B7530E92C52F9F6007CC8D2 /* Products */ = {
+		0B8C87B92C57FA3300653760 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B7530E82C52F9F6007CC8D2 /* oneFocus.app */,
+				0B8C87B82C57FA3300653760 /* WeSplit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B7530EA2C52F9F6007CC8D2 /* oneFocus */ = {
+		0B8C87BA2C57FA3300653760 /* WeSplit */ = {
 			isa = PBXGroup;
 			children = (
-				0BB65DA22C53F95600A4013E /* Sounds */,
-				0B7530EB2C52F9F6007CC8D2 /* oneFocusApp.swift */,
-				0B7530ED2C52F9F6007CC8D2 /* ContentView.swift */,
-				0B7530EF2C52F9F8007CC8D2 /* Assets.xcassets */,
-				0B7530F12C52F9F8007CC8D2 /* oneFocus.entitlements */,
-				0B7530F22C52F9F8007CC8D2 /* Preview Content */,
+				0B8C87BB2C57FA3300653760 /* WeSplitApp.swift */,
+				0B8C87BD2C57FA3300653760 /* ContentView.swift */,
+				0B8C87BF2C57FA3400653760 /* Assets.xcassets */,
+				0B8C87C12C57FA3400653760 /* Preview Content */,
 			);
-			path = oneFocus;
+			path = WeSplit;
 			sourceTree = "<group>";
 		};
-		0B7530F22C52F9F8007CC8D2 /* Preview Content */ = {
+		0B8C87C12C57FA3400653760 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0B7530F32C52F9F8007CC8D2 /* Preview Assets.xcassets */,
+				0B8C87C22C57FA3400653760 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0BB65DA22C53F95600A4013E /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B7530E72C52F9F6007CC8D2 /* oneFocus */ = {
+		0B8C87B72C57FA3300653760 /* WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B7530F72C52F9F8007CC8D2 /* Build configuration list for PBXNativeTarget "oneFocus" */;
+			buildConfigurationList = 0B8C87C62C57FA3400653760 /* Build configuration list for PBXNativeTarget "WeSplit" */;
 			buildPhases = (
-				0B7530E42C52F9F6007CC8D2 /* Sources */,
-				0B7530E52C52F9F6007CC8D2 /* Frameworks */,
-				0B7530E62C52F9F6007CC8D2 /* Resources */,
+				0B8C87B42C57FA3300653760 /* Sources */,
+				0B8C87B52C57FA3300653760 /* Frameworks */,
+				0B8C87B62C57FA3300653760 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = oneFocus;
-			productName = oneFocus;
-			productReference = 0B7530E82C52F9F6007CC8D2 /* oneFocus.app */;
+			name = WeSplit;
+			productName = WeSplit;
+			productReference = 0B8C87B82C57FA3300653760 /* WeSplit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B7530E02C52F9F6007CC8D2 /* Project object */ = {
+		0B8C87B02C57FA3300653760 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					0B7530E72C52F9F6007CC8D2 = {
+					0B8C87B72C57FA3300653760 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 0B7530E32C52F9F6007CC8D2 /* Build configuration list for PBXProject "oneFocus" */;
+			buildConfigurationList = 0B8C87B32C57FA3300653760 /* Build configuration list for PBXProject "WeSplit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 0B7530DF2C52F9F6007CC8D2;
-			productRefGroup = 0B7530E92C52F9F6007CC8D2 /* Products */;
+			mainGroup = 0B8C87AF2C57FA3300653760;
+			productRefGroup = 0B8C87B92C57FA3300653760 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B7530E72C52F9F6007CC8D2 /* oneFocus */,
+				0B8C87B72C57FA3300653760 /* WeSplit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B7530E62C52F9F6007CC8D2 /* Resources */ = {
+		0B8C87B62C57FA3300653760 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7530F42C52F9F8007CC8D2 /* Preview Assets.xcassets in Resources */,
-				0B7530F02C52F9F8007CC8D2 /* Assets.xcassets in Resources */,
+				0B8C87C32C57FA3400653760 /* Preview Assets.xcassets in Resources */,
+				0B8C87C02C57FA3400653760 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B7530E42C52F9F6007CC8D2 /* Sources */ = {
+		0B8C87B42C57FA3300653760 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7530EE2C52F9F6007CC8D2 /* ContentView.swift in Sources */,
-				0B7530EC2C52F9F6007CC8D2 /* oneFocusApp.swift in Sources */,
+				0B8C87BE2C57FA3300653760 /* ContentView.swift in Sources */,
+				0B8C87BC2C57FA3300653760 /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0B7530F52C52F9F8007CC8D2 /* Debug */ = {
+		0B8C87C42C57FA3400653760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,16 +197,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		0B7530F62C52F9F8007CC8D2 /* Release */ = {
+		0B8C87C52C57FA3400653760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,83 +254,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0B7530F82C52F9F8007CC8D2 /* Debug */ = {
+		0B8C87C72C57FA3400653760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = oneFocus/oneFocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"oneFocus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocus;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.WeSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0B7530F92C52F9F8007CC8D2 /* Release */ = {
+		0B8C87C82C57FA3400653760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = oneFocus/oneFocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"oneFocus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocus;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.WeSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B7530E32C52F9F6007CC8D2 /* Build configuration list for PBXProject "oneFocus" */ = {
+		0B8C87B32C57FA3300653760 /* Build configuration list for PBXProject "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B7530F52C52F9F8007CC8D2 /* Debug */,
-				0B7530F62C52F9F8007CC8D2 /* Release */,
+				0B8C87C42C57FA3400653760 /* Debug */,
+				0B8C87C52C57FA3400653760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B7530F72C52F9F8007CC8D2 /* Build configuration list for PBXNativeTarget "oneFocus" */ = {
+		0B8C87C62C57FA3400653760 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B7530F82C52F9F8007CC8D2 /* Debug */,
-				0B7530F92C52F9F8007CC8D2 /* Release */,
+				0B8C87C72C57FA3400653760 /* Debug */,
+				0B8C87C82C57FA3400653760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B7530E02C52F9F6007CC8D2 /* Project object */;
+	rootObject = 0B8C87B02C57FA3300653760 /* Project object */;
 }
