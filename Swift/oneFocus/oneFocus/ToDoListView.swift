@@ -50,7 +50,7 @@ struct ToDoListView: View {
             }
         }
         .padding()
-        .frame(width: 300, height: 200)
+        .frame(width: 500, height: 200)
     }
 
     private func deleteTask(at offsets: IndexSet) {

@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  oneFocus
+//  beta
 //
-//  Created by Samuel Rojas on 8/14/24.
+//  Created by Samuel Rojas on 8/26/24.
 //
 
 import SwiftUI
