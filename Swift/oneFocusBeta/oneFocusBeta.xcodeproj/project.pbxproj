@@ -6,20 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B6A941D2C8A3F3300BF5A93 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A941C2C8A3F3300BF5A93 /* PomodoroTimer.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		0B803E0F2C7D14F3006BE543 /* beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6A94062C8A1C8000BF5A93 /* oneFocusBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneFocusBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6A941C2C8A3F3300BF5A93 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B803E112C7D14F3006BE543 /* beta */ = {
+		0B6A94082C8A1C8000BF5A93 /* oneFocusBeta */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = beta;
+			path = oneFocusBeta;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B803E0C2C7D14F3006BE543 /* Frameworks */ = {
+		0B6A94032C8A1C8000BF5A93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +34,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B803E062C7D14F3006BE543 = {
+		0B6A93FD2C8A1C8000BF5A93 = {
 			isa = PBXGroup;
 			children = (
-				0B803E112C7D14F3006BE543 /* beta */,
-				0B803E102C7D14F3006BE543 /* Products */,
+				0B6A941C2C8A3F3300BF5A93 /* PomodoroTimer.swift */,
+				0B6A94082C8A1C8000BF5A93 /* oneFocusBeta */,
+				0B6A94072C8A1C8000BF5A93 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0B803E102C7D14F3006BE543 /* Products */ = {
+		0B6A94072C8A1C8000BF5A93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B803E0F2C7D14F3006BE543 /* beta.app */,
+				0B6A94062C8A1C8000BF5A93 /* oneFocusBeta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +54,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B803E0E2C7D14F3006BE543 /* beta */ = {
+		0B6A94052C8A1C8000BF5A93 /* oneFocusBeta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B803E1E2C7D14F5006BE543 /* Build configuration list for PBXNativeTarget "beta" */;
+			buildConfigurationList = 0B6A94152C8A1C8200BF5A93 /* Build configuration list for PBXNativeTarget "oneFocusBeta" */;
 			buildPhases = (
-				0B803E0B2C7D14F3006BE543 /* Sources */,
-				0B803E0C2C7D14F3006BE543 /* Frameworks */,
-				0B803E0D2C7D14F3006BE543 /* Resources */,
+				0B6A94022C8A1C8000BF5A93 /* Sources */,
+				0B6A94032C8A1C8000BF5A93 /* Frameworks */,
+				0B6A94042C8A1C8000BF5A93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0B803E112C7D14F3006BE543 /* beta */,
+				0B6A94082C8A1C8000BF5A93 /* oneFocusBeta */,
 			);
-			name = beta;
+			name = oneFocusBeta;
 			packageProductDependencies = (
 			);
-			productName = beta;
-			productReference = 0B803E0F2C7D14F3006BE543 /* beta.app */;
+			productName = oneFocusBeta;
+			productReference = 0B6A94062C8A1C8000BF5A93 /* oneFocusBeta.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B803E072C7D14F3006BE543 /* Project object */ = {
+		0B6A93FE2C8A1C8000BF5A93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					0B803E0E2C7D14F3006BE543 = {
+					0B6A94052C8A1C8000BF5A93 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 0B803E0A2C7D14F3006BE543 /* Build configuration list for PBXProject "beta" */;
+			buildConfigurationList = 0B6A94012C8A1C8000BF5A93 /* Build configuration list for PBXProject "oneFocusBeta" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 0B803E062C7D14F3006BE543;
+			mainGroup = 0B6A93FD2C8A1C8000BF5A93;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 0B803E102C7D14F3006BE543 /* Products */;
+			productRefGroup = 0B6A94072C8A1C8000BF5A93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B803E0E2C7D14F3006BE543 /* beta */,
+				0B6A94052C8A1C8000BF5A93 /* oneFocusBeta */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B803E0D2C7D14F3006BE543 /* Resources */ = {
+		0B6A94042C8A1C8000BF5A93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,17 +121,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B803E0B2C7D14F3006BE543 /* Sources */ = {
+		0B6A94022C8A1C8000BF5A93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6A941D2C8A3F3300BF5A93 /* PomodoroTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0B803E1C2C7D14F5006BE543 /* Debug */ = {
+		0B6A94132C8A1C8200BF5A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		0B803E1D2C7D14F5006BE543 /* Release */ = {
+		0B6A94142C8A1C8200BF5A93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,16 +250,16 @@
 			};
 			name = Release;
 		};
-		0B803E1F2C7D14F5006BE543 /* Debug */ = {
+		0B6A94162C8A1C8200BF5A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = beta/beta.entitlements;
+				CODE_SIGN_ENTITLEMENTS = oneFocusBeta/oneFocusBeta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"beta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"oneFocusBeta/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -263,23 +270,23 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.beta;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocusBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		0B803E202C7D14F5006BE543 /* Release */ = {
+		0B6A94172C8A1C8200BF5A93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = beta/beta.entitlements;
+				CODE_SIGN_ENTITLEMENTS = oneFocusBeta/oneFocusBeta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"beta/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"oneFocusBeta/Preview Content\"";
 				DEVELOPMENT_TEAM = KWPCVSJ5B4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -290,7 +297,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.beta;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rojas.samuel.oneFocusBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B803E0A2C7D14F3006BE543 /* Build configuration list for PBXProject "beta" */ = {
+		0B6A94012C8A1C8000BF5A93 /* Build configuration list for PBXProject "oneFocusBeta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B803E1C2C7D14F5006BE543 /* Debug */,
-				0B803E1D2C7D14F5006BE543 /* Release */,
+				0B6A94132C8A1C8200BF5A93 /* Debug */,
+				0B6A94142C8A1C8200BF5A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B803E1E2C7D14F5006BE543 /* Build configuration list for PBXNativeTarget "beta" */ = {
+		0B6A94152C8A1C8200BF5A93 /* Build configuration list for PBXNativeTarget "oneFocusBeta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B803E1F2C7D14F5006BE543 /* Debug */,
-				0B803E202C7D14F5006BE543 /* Release */,
+				0B6A94162C8A1C8200BF5A93 /* Debug */,
+				0B6A94172C8A1C8200BF5A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B803E072C7D14F3006BE543 /* Project object */;
+	rootObject = 0B6A93FE2C8A1C8000BF5A93 /* Project object */;
 }
