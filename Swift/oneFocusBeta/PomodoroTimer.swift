@@ -17,6 +17,12 @@ struct PomodoroTimer: View {
     //Use the Timer Class
     @State private var timer: Timer? = nil
     
+    //Array to store the task
+    @State private var tasks: [String] = []
+    
+    //The Task in seconds
+    @State private var userTask: String = ""
+    
     
     var body: some View {
        
@@ -56,6 +62,13 @@ struct PomodoroTimer: View {
         }
         .padding()
         .frame(width: 200)
+        
+        VStack(spacing: 20) {
+            
+            TextField("Task", text: $userTask)
+                    
+            
+        }
         
     }
     
