@@ -13,9 +13,11 @@ struct oneFocusApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
-        Settings {
-            EmptyView()
-        }
+        MenuBarExtra {
+            MainView()
+        } label: {
+            Text("oneFocus")
+        }.menuBarExtraStyle(.window)
     }
 }
 
@@ -46,7 +48,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem(title: "To-Do List", action: #selector(switchToDoList), keyEquivalent: "T"))
         menu.addItem(NSMenuItem(title: "Pomodoro Timer", action: #selector(switchToPomodoro), keyEquivalent: "P"))
-        menu.addItem(NSMenuItem(title: "Keyboard Cleaner", action: #selector(switchToKeyboardCleaner), keyEquivalent: "K"))
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Quit oneFocus", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "Q"))
@@ -83,8 +84,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         togglePopover()
     }
     
-    @objc func switchToKeyboardCleaner() {
-        currentView = AnyView(KeyboardCleanerView())
-        togglePopover()
-    }
+
 }
