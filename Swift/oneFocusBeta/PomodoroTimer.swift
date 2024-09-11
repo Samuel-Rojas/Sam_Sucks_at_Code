@@ -18,7 +18,7 @@ struct PomodoroTimer: View {
     @State private var timer: Timer? = nil
     
     //Array to store the task
-    @State private var tasks: [String] = []
+    @State private var tasks = [String]()
     
     //The Task in seconds
     @State private var userTask: String = ""
@@ -65,11 +65,33 @@ struct PomodoroTimer: View {
         
         VStack(spacing: 20) {
             
-            TextField("Task", text: $userTask)
-                    
+            Section{
+                TextField("Task for this Flow", text: $userTask)
+                
+                Button(action: {
+                   addTask()
+                }) {
+                    Text("+")
+                }
+                
+            }
+            
+            Section{
+                ForEach(tasks, id: \.self) { task in
+                    HStack {
+                        Text(task)
+                    }
+                }
+            }
+            .padding()
             
         }
         
+    }
+    
+    func addTask() {
+        tasks.append(userTask)
+        userTask = ""
     }
     
     func timeString(time: Int) -> String{
