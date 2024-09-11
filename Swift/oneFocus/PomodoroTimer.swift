@@ -80,6 +80,17 @@ struct PomodoroTimer: View {
                 ForEach(tasks, id: \.self) { task in
                     HStack {
                         Text(task)
+                        Button(action: {
+                            //deleteTask()
+                        }) {
+                            Text("Delete")
+                        }
+                        
+                        Button(action: {
+                            //editTask
+                        })  {
+                            Text("Edit")
+                        }
                     }
                 }
             }
@@ -92,6 +103,14 @@ struct PomodoroTimer: View {
     func addTask() {
         tasks.append(userTask)
         userTask = ""
+    }
+    
+    func deleteTask() {
+        //Finish this function
+    }
+    
+    func editTaks() {
+        //Finish this function
     }
     
     func timeString(time: Int) -> String{

@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct oneFocusApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra{
             PomodoroTimer()
+        } label: {
+            Text("oneFocus")
         }
+        .menuBarExtraStyle(.window)
     }
 }
