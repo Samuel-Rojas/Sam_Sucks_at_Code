@@ -23,6 +23,12 @@ struct PomodoroTimer: View {
     //The Task in seconds
     @State private var userTask: String = ""
     
+    //Storing the index of the current index
+    @State private var currentEditIndex: Int? = nil
+    
+    //Update the task
+    @State private var editatedTask: String = ""
+    
     
     var body: some View {
        
@@ -75,43 +81,69 @@ struct PomodoroTimer: View {
                 }
                 
             }
+            .padding()
             
             Section{
-                ForEach(tasks, id: \.self) { task in
+                ForEach(Array(tasks.enumerated()), id: \.element) { index, task in
                     HStack {
-                        Text(task)
+                        if currentEditIndex == index {
+                            // Task is being edited, show TextField
+                            TextField("Edit Task", text: $editatedTask)
+                            
+                            Button(action: {
+                                // Save the edited task
+                                tasks[index] = editatedTask
+                                currentEditIndex = nil // Exit edit mode
+                            }) {
+                                Text("Save")
+                            }
+                            .padding()
+                        } else {
+                            // Task is not being edited, show Text view
+                            Text(task)
+                            
+                            Button(action: {
+                                // Enter edit mode
+                                currentEditIndex = index
+                                editatedTask = task // Set the current task to be edited
+                            }) {
+                                Text("Edit")
+                            }
+                            .padding()
+                        }
+                        
+                        // Delete button stays the same
                         Button(action: {
-                            //deleteTask()
+                            deleteTask(at: index)
                         }) {
                             Text("Delete")
                         }
-                        
-                        Button(action: {
-                            //editTask
-                        })  {
-                            Text("Edit")
-                        }
+                        .padding()
                     }
                 }
+                .padding()
+
             }
-            .padding()
+            
             
         }
         
     }
-    
+    //Function --> Adds task to the to-do list
     func addTask() {
         tasks.append(userTask)
         userTask = ""
     }
     
-    func deleteTask() {
-        //Finish this function
+    //Function --> Deletes task based on the index
+    func deleteTask(at index: Int) {
+        
+        
+        tasks.remove(at: index)
+        
     }
     
-    func editTaks() {
-        //Finish this function
-    }
+    
     
     func timeString(time: Int) -> String{
         let minutes = time / 60
