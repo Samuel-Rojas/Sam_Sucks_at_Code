@@ -29,15 +29,30 @@ struct PomodoroTimer: View {
     //Update the task
     @State private var editatedTask: String = ""
     
+    //Array that contains the amount of times
+    @State private var times = [1500, 1800, 2100 , 2700 , 3000, 3600, 5400]
+    
     
     var body: some View {
        
         VStack(spacing: 20){
             
             //Display Time
-            Text(timeString(time: timeRemaining))
-                .font(.largeTitle)
-                .padding()
+            
+            Section{
+                Text(timeString(time: timeRemaining))
+                    .font(.largeTitle)
+                    .padding()
+                
+                Picker("Select Time Range", selection: $timeRemaining){
+                    ForEach(times, id: \.self){ timeRange in
+                        Text("\(timeRange / 60) minutes")
+                    }
+                }
+                
+                
+                
+            }
             
             Button(action:{
                 if timeIsActive {
@@ -78,6 +93,7 @@ struct PomodoroTimer: View {
                    addTask()
                 }) {
                     Text("+")
+                    
                 }
                 
             }
@@ -145,6 +161,7 @@ struct PomodoroTimer: View {
     
     
     
+    
     func timeString(time: Int) -> String{
         let minutes = time / 60
         let seconds = time % 60
@@ -171,7 +188,7 @@ struct PomodoroTimer: View {
         func resetTimer() {
             timeIsActive = false
             timer?.invalidate()
-            timeRemaining = 1500 // 25 minutes
+            timeRemaining =  times[0]
         }
 }
 
