@@ -11,7 +11,7 @@ import SwiftUI
 struct oneFocusApp: App {
     var body: some Scene {
         MenuBarExtra{
-            PomodoroTimer()
+            Flow()
         } label: {
             Text("oneFocus")
         }
