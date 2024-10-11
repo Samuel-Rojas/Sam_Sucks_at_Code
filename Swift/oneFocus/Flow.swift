@@ -10,6 +10,8 @@ import SwiftUI
 
 struct Flow: View {
     
+    @ObservedObject var timerManager = TimerManager.shared
+    @FocusState private var isTaskFieldFocused: Bool
     @State private var timeRemaining = 1500
     @State private var selectedTime = 1500 {
         //Checks each time the timer is active
@@ -21,7 +23,11 @@ struct Flow: View {
     }
     @State private var timeIsActive = false
     @State private var timer: Timer? = nil
-    @State private var tasks = [String]()
+    @State private var tasks = [String]() {
+        didSet{
+            saveTasks()
+        }
+    }
     @State private var userTask: String = ""
     @State private var currentEditIndex: Int? = nil
     @State private var editedTask: String = ""
@@ -68,6 +74,9 @@ struct Flow: View {
             .cornerRadius(12) // Rounded corners for the window
             .shadow(radius: 5) // Optional shadow for better visibility
         }
+        .onAppear{
+            loadTasks()
+        }
     }
     
     // Task Input Section
@@ -89,6 +98,7 @@ struct Flow: View {
                         isHoveredAddTask = hovered
                     }
                 }
+                .focused($isTaskFieldFocused)
             
             Button(action: {
                 withAnimation(.spring()) {
@@ -147,7 +157,7 @@ struct Flow: View {
     private var timerSection: some View {
         VStack(spacing: 15) { // Reduced spacing
             // Display Time
-            Text(timeString(time: timeIsActive ? timeRemaining : selectedTime))
+            Text(timerManager.timeString)
                 .font(.title) // Adjusted font size
                 .padding()
                 .border(Color.black, width: 3)
@@ -161,7 +171,7 @@ struct Flow: View {
                     }
                 }
             
-            Picker("Select Time", selection: $selectedTime) {
+            Picker("Select Time", selection: $timerManager.selectedTime) {
                 ForEach(times, id: \.self) { timeRange in
                     Text("\(timeRange / 60)")
                 }
@@ -173,9 +183,9 @@ struct Flow: View {
             // Timer Controls
             HStack(spacing: 15) { // Reduced spacing
                 Button(action: {
-                    timeIsActive ? pauseTimer() : startTimer()
+                    timerManager.isActive ? timerManager.pauseTimer() : timerManager.startTimer()
                 }) {
-                    Text(timeIsActive ? "Pause" : "Start")
+                    Text(timerManager.isActive ? "Pause" : "Start")
                         .font(.subheadline) // Smaller font size
                         .padding(6)
                         .background(Color.blue)
@@ -191,7 +201,7 @@ struct Flow: View {
                 }
                 
                 Button(action: {
-                    resetTimer()
+                    timerManager.resetTimer()
                 }) {
                     Text("Reset")
                         .font(.subheadline) // Smaller font size
@@ -246,11 +256,12 @@ struct Flow: View {
                     deleteTask(at: index)
                 }
             }) {
-                Image(systemName: "trash")
-                    .foregroundColor(.red)
+                Image(systemName: "checkmark")
+                    .foregroundColor(.green)
                     .font(.system(size: 18)) // Smaller icon size
             }
             .padding(.horizontal, 5)
+            
         }
     }
     
@@ -284,6 +295,7 @@ struct Flow: View {
         guard !userTask.isEmpty else { return }
         tasks.append(userTask)
         userTask = ""
+        isTaskFieldFocused = false
     }
     
     // Delete Task
@@ -294,17 +306,18 @@ struct Flow: View {
     func timeString(time: Int) -> String {
         let minutes = time / 60
         let seconds = time % 60
-        return String(format: "%02d:%02d", minutes, seconds)
+        let timeString = String(format: "%02d:%02d", minutes, seconds)
+        return timeString
     }
     
     func startTimer() {
-        timeRemaining = selectedTime 
-        timeIsActive = true
+        timerManager.timeRemaining = timerManager.selectedTime
+        timerManager.isActive = true
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            if timeRemaining > 0 {
-                timeRemaining -= 1
+            if timerManager.timeRemaining > 0 {
+                timerManager.timeRemaining -= 1
             } else {
-                resetTimer()
+                timerManager.resetTimer()
             }
         }
     }
@@ -318,10 +331,26 @@ struct Flow: View {
     func resetTimer() {
         timeIsActive = false
         timer?.invalidate()
-        timeRemaining = selectedTime
+        timerManager.timeRemaining = timerManager.selectedTime
     }
+    
+    func saveTasks() {
+        if let encodedData = try? JSONEncoder().encode(tasks) {
+            UserDefaults.standard.set(encodedData, forKey: "tasks")
+        }
+    }
+
+    func loadTasks() {
+        if let savedData = UserDefaults.standard.data(forKey: "tasks"),
+           let decodedTasks = try? JSONDecoder().decode([String].self, from: savedData) {
+            tasks = decodedTasks
+        }
+    }
+
 }
 
 #Preview {
     Flow()
+    
 }
+

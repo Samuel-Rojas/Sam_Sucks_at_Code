@@ -8,13 +8,16 @@
 import SwiftUI
 
 @main
-struct oneFocusApp: App {
+struct OneFocusApp: App {
+
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        MenuBarExtra{
-            Flow()
-        } label: {
-            Text("oneFocus")
+        
+        Settings{
+            EmptyView()
         }
-        .menuBarExtraStyle(.window)
     }
 }
+
+
