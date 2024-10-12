@@ -32,11 +32,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self?.updateStatusItemTitle()
             }
             .store(in: &cancellables)
+        
+        TimerManager.shared.$mode
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                self?.updateStatusItemTitle()
+            }
+            .store(in: &cancellables)
 
         // Create the popover content
         let contentView = Flow()
         popover = NSPopover()
         popover.contentViewController = NSHostingController(rootView: contentView)
+        popover.behavior = .transient
 
         // Set up the status bar button action
         if let button = statusItem.button {
@@ -47,7 +55,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func updateStatusItemTitle() {
         if TimerManager.shared.isActive {
-            statusItem.button?.title = TimerManager.shared.timeString
+            let modeSymbol = TimerManager.shared.mode == .work ? "🎧" : "🏖️"
+            statusItem.button?.title = "\(modeSymbol) \(TimerManager.shared.timeString)"
         } else {
             statusItem.button?.title = "oneFocus"
         }
@@ -69,3 +78,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+//

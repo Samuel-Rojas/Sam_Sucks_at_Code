@@ -12,16 +12,6 @@ struct Flow: View {
     
     @ObservedObject var timerManager = TimerManager.shared
     @FocusState private var isTaskFieldFocused: Bool
-    @State private var timeRemaining = 1500
-    @State private var selectedTime = 1500 {
-        //Checks each time the timer is active
-        didSet {
-            if !timeIsActive {
-                timeRemaining = selectedTime
-            }
-        }
-    }
-    @State private var timeIsActive = false
     @State private var timer: Timer? = nil
     @State private var tasks = [String]() {
         didSet{
@@ -51,10 +41,15 @@ struct Flow: View {
                 // Minimalistic To-Do Heading
                 Text("Flow")
                     .font(.system(size: 20, weight: .semibold, design: .rounded)) // Adjusted font size
-                    .foregroundColor(Color.primary.opacity(0.8))
+                    .foregroundColor(Color.primary)
                     .padding(.top, 15) // Adjusted padding
                     .padding(.bottom, 5)
                     .multilineTextAlignment(.center)
+                
+                //Display Current Mode
+                Text(timerManager.modeString)
+                    .font(.headline)
+                    .padding(.bottom, 5)
                     
                 
                 // Task Input Section
@@ -70,7 +65,7 @@ struct Flow: View {
             }
             .padding()
             .frame(width: 300) // Set a smaller width for the menu bar app
-            .background(Color.white) // Minimal background color
+            .background(Color(NSColor.windowBackgroundColor)) // Minimal background color
             .cornerRadius(12) // Rounded corners for the window
             .shadow(radius: 5) // Optional shadow for better visibility
         }
@@ -84,7 +79,7 @@ struct Flow: View {
         HStack {
             TextField("Task...", text: $userTask)
                 .padding(8)
-                .background(Color(.white))
+                .background(Color(NSColor.textBackgroundColor))
                     .cornerRadius(8)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
@@ -109,7 +104,7 @@ struct Flow: View {
                     .font(.system(size: 18)) // Smaller icon
                     .foregroundColor(.white)
                     .padding(8)
-                    .background(Color.blue)
+                    .background(Color.accentColor)
                     .clipShape(Circle())
             }
             .buttonStyle(PlainButtonStyle())
@@ -157,13 +152,13 @@ struct Flow: View {
     private var timerSection: some View {
         VStack(spacing: 15) { // Reduced spacing
             // Display Time
-            Text(timerManager.timeString)
+            Text("\(timerManager.modeString): \(timerManager.timeString)")
                 .font(.title) // Adjusted font size
                 .padding()
                 .border(Color.black, width: 3)
                 .background(Color.gray)
                 .cornerRadius(5)
-                .animation(.easeIn, value: timeIsActive)
+                .animation(.easeIn, value: timerManager.isActive)
                 .scaleEffect(isHoveredTimer ? 0.9: 1)
                 .onHover { timerHover in
                     withAnimation(.easeIn(duration: 0.2)){
@@ -171,14 +166,14 @@ struct Flow: View {
                     }
                 }
             
-            Picker("Select Time", selection: $timerManager.selectedTime) {
+            Picker("Work Time", selection: $timerManager.selectedTime) {
                 ForEach(times, id: \.self) { timeRange in
                     Text("\(timeRange / 60)")
                 }
             }
             .pickerStyle(MenuPickerStyle()) // Minimal Picker Style
             .frame(width: 100, height: 20)
-            .disabled(timeIsActive)
+            .disabled(timerManager.isActive && timerManager.mode == .rest)
             
             // Timer Controls
             HStack(spacing: 15) { // Reduced spacing
@@ -324,12 +319,12 @@ struct Flow: View {
 
     
     func pauseTimer() {
-        timeIsActive = false
+        timerManager.isActive = false
         timer?.invalidate()
     }
     
     func resetTimer() {
-        timeIsActive = false
+        timerManager.isActive = false
         timer?.invalidate()
         timerManager.timeRemaining = timerManager.selectedTime
     }

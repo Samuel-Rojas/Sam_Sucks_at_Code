@@ -13,7 +13,22 @@ class TimerManager: ObservableObject {
 
     @Published var timeRemaining: Int = 1500
     @Published var isActive = false
-    @Published var selectedTime: Int = 1500
+    @Published var selectedTime: Int = 1500 {
+        didSet {
+            if !isActive && mode == .work{
+                timeRemaining = selectedTime
+            }
+        }
+    }
+    @Published var selectedBreakTime: Int = 1500 {
+        didSet {
+            if !isActive && mode == .rest {
+                timeRemaining = selectedBreakTime
+            }
+        }
+    }
+    
+    @Published var mode: TimerMode = .work
 
     var timer: Timer?
 
@@ -22,9 +37,21 @@ class TimerManager: ObservableObject {
         let seconds = timeRemaining % 60
         return String(format: "%02d:%02d", minutes, seconds)
     }
+    
+    var modeString: String {
+        switch mode {
+        case .work:
+            return "Work"
+        case .rest:
+            return "Rest"
+        }
+    }
 
     func startTimer() {
         timeRemaining = selectedTime
+        if !isActive {
+            timeRemaining = mode == .work ? selectedTime : selectedBreakTime
+        }
         isActive = true
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
@@ -32,9 +59,20 @@ class TimerManager: ObservableObject {
             if self.timeRemaining > 0 {
                 self.timeRemaining -= 1
             } else {
-                self.resetTimer()
+                timerEnded()
             }
         }
+    }
+    
+    func timerEnded() {
+        if mode == .work {
+            mode = .rest
+            timeRemaining = selectedBreakTime
+        } else {
+            mode = .work
+            timeRemaining = selectedTime
+        }
+        startTimer()
     }
 
     func pauseTimer() {
@@ -45,7 +83,13 @@ class TimerManager: ObservableObject {
     func resetTimer() {
         isActive = false
         timer?.invalidate()
+        mode = .work
         timeRemaining = selectedTime
+    }
+    
+    enum TimerMode {
+        case work
+        case rest
     }
 }
 
