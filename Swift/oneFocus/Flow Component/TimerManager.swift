@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UserNotifications
 
 class TimerManager: ObservableObject {
     static let shared = TimerManager()
@@ -20,7 +21,7 @@ class TimerManager: ObservableObject {
             }
         }
     }
-    @Published var selectedBreakTime: Int = 1500 {
+    @Published var selectedBreakTime: Int = 300 {
         didSet {
             if !isActive && mode == .rest {
                 timeRemaining = selectedBreakTime
@@ -66,9 +67,11 @@ class TimerManager: ObservableObject {
     
     func timerEnded() {
         if mode == .work {
+            sendNotification(title: "Break Time", body: "Time to take a break!")
             mode = .rest
             timeRemaining = selectedBreakTime
         } else {
+            sendNotification(title: "Work Time", body: "Time to Focus!")
             mode = .work
             timeRemaining = selectedTime
         }
@@ -85,6 +88,20 @@ class TimerManager: ObservableObject {
         timer?.invalidate()
         mode = .work
         timeRemaining = selectedTime
+    }
+    
+    func sendNotification(title: String, body: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error adding notification request: \(error)")
+            }
+        }
     }
     
     enum TimerMode {

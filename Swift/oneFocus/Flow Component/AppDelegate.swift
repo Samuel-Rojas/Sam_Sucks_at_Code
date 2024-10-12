@@ -7,8 +7,9 @@
 import Cocoa
 import SwiftUI
 import Combine
+import UserNotifications
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
     var statusItem: NSStatusItem!
     var popover: NSPopover!
     var cancellables = Set<AnyCancellable>()
@@ -51,6 +52,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(togglePopover(_:))
             button.target = self
         }
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if let error = error {
+                print("Error requesting notifications authroization: \(error)")
+            } else if granted {
+                print("Notifications permission granted.")
+            } else {
+                print("Notifications permission denied.")
+            }
+        }
+        
+        UNUserNotificationCenter.current().delegate = self
     }
 
     func updateStatusItemTitle() {
@@ -72,9 +85,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didDeliver notification: UNNotification) {
+        print("Notification delivered: \(notification.request.content.title)")
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, shouldPresent notification: UNNotification) -> Bool {
+        // Return true to show notification even when app is in foreground
+        return true
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // Display the notification even when the app is in the foreground
+        completionHandler([.banner, .sound])
+    }
+
+
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-        return false // Keep the app running after closing the window
+        return false
     }
 }
 

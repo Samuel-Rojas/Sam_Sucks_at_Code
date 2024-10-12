@@ -136,7 +136,7 @@ struct Flow: View {
                     }
                 }
                 .padding(8) // Reduced padding
-                .background(Color.white)
+                .background(Color(NSColor.textBackgroundColor))
                 .cornerRadius(8)
                 .transition(.asymmetric(
                     insertion: .opacity.combined(with: .move(edge: .trailing)),
@@ -156,8 +156,8 @@ struct Flow: View {
                 .font(.title) // Adjusted font size
                 .padding()
                 .border(Color.black, width: 3)
-                .background(Color.gray)
-                .cornerRadius(5)
+                .background(Color(NSColor.textBackgroundColor))
+                .cornerRadius(7)
                 .animation(.easeIn, value: timerManager.isActive)
                 .scaleEffect(isHoveredTimer ? 0.9: 1)
                 .onHover { timerHover in
@@ -229,7 +229,7 @@ struct Flow: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.vertical, 6)
                 .padding(.horizontal, 10)
-                .background(Color.white)
+                .background(Color(NSColor.textBackgroundColor))
                 .cornerRadius(8)
             
             // Edit Button
@@ -265,7 +265,7 @@ struct Flow: View {
         HStack {
             TextField("Edit Task", text: $editedTask)
                 .padding(8)
-                .background(Color(.white))
+                .background(Color(NSColor.textBackgroundColor))
                 .cornerRadius(8)
                 .frame(height: 30) // Smaller height
             

@@ -6,23 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0B8DE8962CB9D3CC001A4773 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DE8952CB9D3CC001A4773 /* TimerManager.swift */; };
-		0B8DE8982CB9D56E001A4773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DE8972CB9D56E001A4773 /* AppDelegate.swift */; };
-		0B930BEC2CA49A430094BFC3 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B930BEB2CA49A430094BFC3 /* Flow.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		0B2D62492C9228120006E9AA /* oneFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B8DE8952CB9D3CC001A4773 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
-		0B8DE8972CB9D56E001A4773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B930BEB2CA49A430094BFC3 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0B2D624B2C9228120006E9AA /* oneFocus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = oneFocus;
+			sourceTree = "<group>";
+		};
+		0B8DE8992CBA28E3001A4773 /* Flow Component */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Flow Component";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -41,9 +37,7 @@
 		0B2D62402C9228120006E9AA = {
 			isa = PBXGroup;
 			children = (
-				0B8DE8952CB9D3CC001A4773 /* TimerManager.swift */,
-				0B930BEB2CA49A430094BFC3 /* Flow.swift */,
-				0B8DE8972CB9D56E001A4773 /* AppDelegate.swift */,
+				0B8DE8992CBA28E3001A4773 /* Flow Component */,
 				0B2D624B2C9228120006E9AA /* oneFocus */,
 				0B2D624A2C9228120006E9AA /* Products */,
 			);
@@ -74,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0B2D624B2C9228120006E9AA /* oneFocus */,
+				0B8DE8992CBA28E3001A4773 /* Flow Component */,
 			);
 			name = oneFocus;
 			packageProductDependencies = (
@@ -131,9 +126,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B8DE8962CB9D3CC001A4773 /* TimerManager.swift in Sources */,
-				0B8DE8982CB9D56E001A4773 /* AppDelegate.swift in Sources */,
-				0B930BEC2CA49A430094BFC3 /* Flow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
