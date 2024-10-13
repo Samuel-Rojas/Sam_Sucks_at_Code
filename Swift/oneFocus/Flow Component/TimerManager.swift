@@ -14,6 +14,7 @@ class TimerManager: ObservableObject {
 
     @Published var timeRemaining: Int = 1500
     @Published var isActive = false
+    @Published var isPaused: Bool = false
     @Published var selectedTime: Int = 1500 {
         didSet {
             if !isActive && mode == .work{
@@ -49,11 +50,14 @@ class TimerManager: ObservableObject {
     }
 
     func startTimer() {
-        timeRemaining = selectedTime
-        if !isActive {
+        if isPaused {
+            isActive = true
+            isPaused = false
+        } else if !isActive {
             timeRemaining = mode == .work ? selectedTime : selectedBreakTime
+            isActive = true
+            isPaused = false
         }
-        isActive = true
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
@@ -80,11 +84,13 @@ class TimerManager: ObservableObject {
 
     func pauseTimer() {
         isActive = false
+        isPaused = true
         timer?.invalidate()
     }
 
     func resetTimer() {
         isActive = false
+        isPaused = false
         timer?.invalidate()
         mode = .work
         timeRemaining = selectedTime

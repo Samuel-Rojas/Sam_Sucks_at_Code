@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 import UserNotifications
 
+//Delegates the app config
 class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
     var statusItem: NSStatusItem!
     var popover: NSPopover!

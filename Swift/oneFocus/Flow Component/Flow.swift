@@ -179,9 +179,13 @@ struct Flow: View {
             // Timer Controls
             HStack(spacing: 15) { // Reduced spacing
                 Button(action: {
-                    timerManager.isActive ? timerManager.pauseTimer() : timerManager.startTimer()
+                    if timerManager.isActive {
+                        timerManager.pauseTimer()
+                    } else {
+                        timerManager.startTimer()
+                    }
                 }) {
-                    Text(timerManager.isActive ? "Pause" : "Start")
+                    Text(timerManager.isActive ? "Pause" : (timerManager.isPaused ? "Resume" : "Start"))
                         .font(.subheadline) // Smaller font size
                         .padding(6)
                         .background(Color.blue)
@@ -316,6 +320,10 @@ struct Flow: View {
                 timerManager.resetTimer()
             }
         }
+    }
+    
+    func resumeTimer() {
+        
     }
 
     
