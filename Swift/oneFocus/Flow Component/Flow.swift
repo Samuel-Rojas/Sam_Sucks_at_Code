@@ -46,10 +46,10 @@ struct Flow: View {
                     .padding(.bottom, 5)
                     .multilineTextAlignment(.center)
                 
-                //Display Current Mode
-                Text(timerManager.modeString)
-                    .font(.headline)
-                    .padding(.bottom, 5)
+//                //Display Current Mode
+//                Text(timerManager.modeString)
+//                    .font(.headline)
+//                    .padding(.bottom, 5)
                     
                 
                 // Task Input Section
@@ -80,7 +80,7 @@ struct Flow: View {
             TextField("Task...", text: $userTask)
                 .padding(8)
                 .background(Color(NSColor.textBackgroundColor))
-                    .cornerRadius(8)
+                .cornerRadius(8)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.gray.opacity(0.5), lineWidth: 1)
@@ -125,6 +125,7 @@ struct Flow: View {
    
     
     // Task List Section
+    //.enumerated() creates a sequence of key-value pairs
     private var taskListSection: some View {
         VStack(spacing: 7) { // Reduced spacing between tasks
             ForEach(Array(tasks.enumerated()), id: \.element) { index, task in
@@ -166,13 +167,13 @@ struct Flow: View {
                     }
                 }
             
-            Picker("Work Time", selection: $timerManager.selectedTime) {
+            Picker("Work Duration", selection: $timerManager.selectedTime) {
                 ForEach(times, id: \.self) { timeRange in
                     Text("\(timeRange / 60)")
                 }
             }
             .pickerStyle(MenuPickerStyle()) // Minimal Picker Style
-            .frame(width: 100, height: 20)
+            .frame(width: 115, height: 20)
             .disabled(timerManager.isActive && timerManager.mode == .rest)
             
             // Timer Controls
