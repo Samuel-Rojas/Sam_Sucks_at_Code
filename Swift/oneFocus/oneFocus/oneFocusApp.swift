@@ -10,13 +10,16 @@ import SwiftUI
 @main
 struct OneFocusApp: App {
 
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    //@NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         
-        Settings{
-            EmptyView()
+        MenuBarExtra{
+            Quicky()
+        } label: {
+            Text("Quicky")
         }
+        .menuBarExtraStyle(.window)
     }
 }
 

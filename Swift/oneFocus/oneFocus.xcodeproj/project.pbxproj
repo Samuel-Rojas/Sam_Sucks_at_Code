@@ -11,6 +11,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B0BA1D52CBC4CA400330228 /* Note Taker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Note Taker";
+			sourceTree = "<group>";
+		};
 		0B2D624B2C9228120006E9AA /* oneFocus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = oneFocus;
@@ -37,6 +42,7 @@
 		0B2D62402C9228120006E9AA = {
 			isa = PBXGroup;
 			children = (
+				0B0BA1D52CBC4CA400330228 /* Note Taker */,
 				0B8DE8992CBA28E3001A4773 /* Flow Component */,
 				0B2D624B2C9228120006E9AA /* oneFocus */,
 				0B2D624A2C9228120006E9AA /* Products */,
@@ -67,6 +73,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				0B0BA1D52CBC4CA400330228 /* Note Taker */,
 				0B2D624B2C9228120006E9AA /* oneFocus */,
 				0B8DE8992CBA28E3001A4773 /* Flow Component */,
 			);
