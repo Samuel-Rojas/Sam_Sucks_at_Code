@@ -20,6 +20,10 @@ struct OneFocusApp: App {
             Text("Quicky")
         }
         .menuBarExtraStyle(.window)
+        
+//        Settings{
+//            EmptyView()
+//        }
     }
 }
 

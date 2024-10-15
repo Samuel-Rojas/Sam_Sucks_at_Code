@@ -1,13 +1,14 @@
 fn main() {
-    let x: i32 = 2;
-    let y: i32 = 10;
+    let x: i32 = 5;
 
     {
-        let y: i32 = 2;
-        println!("The x value is {} and the y value is {}", x, y);
+        let x: i32 = 12;
+        assert_eq!(x, 12);
     }
 
-    println!("the value of x {} and the y value is {}", x , y);
-    //Hello world
+    assert_eq!(x, 5);
+
+    let x: i32 = 42;
+    println!("{}", x);
 }
     

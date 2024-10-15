@@ -12,19 +12,28 @@ struct Quicky: View {
     @State private var noteTitleText: String = ""
     @State private var noteText: String = ""
     
+    //Animation Variables
+    @State private var isTitleTextHovered: Bool = false
+    @FocusState private var isTitleTextFocused: Bool
+    
     var body: some View {
         
-        //View for Heading
-        titleHeading
-        
-        //View Note Title
-        noteTitle
-        
-        //View for jotting down notes
-        noteArea
-        
-        //View for saving the notes into notion workspace
-        saveNotes
+        ScrollView{
+            
+            VStack{
+                //View for Heading
+                titleHeading
+                
+                //View Note Title
+                noteTitle
+                
+                //View for jotting down notes
+                noteArea
+                
+                //View for saving the notes into notion workspace
+                saveNotes
+            }
+        }
     }
     
     private var titleHeading: some View {
@@ -38,25 +47,47 @@ struct Quicky: View {
     }
     
     private var noteTitle: some View {
-        TextField("Enter Title", text: $noteTitleText)
-            .padding()
-            .multilineTextAlignment(.center)
+        HStack{
+            TextField("Title", text: $noteTitleText)
+                .padding()
+                .background(Color(NSColor.textBackgroundColor))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray.opacity(0.5), lineWidth: 3)
+                )
+                .frame(width: 260, height: 50)
+                .scaleEffect(isTitleTextHovered ? 1.03 : 1.0)
+                .onHover { hoveredTitle in
+                    withAnimation(.easeIn){
+                        isTitleTextHovered = hoveredTitle
+                    }
+                }
+        }
     }
     
     private var noteArea: some View {
+        VStack {
         TextEditor(text: $noteText)
             .padding()
-            .background(Color.green)
-            .border(Color.black, width: 1)
-            
+            .border(Color.red, width: 2)
+            .background(Color(NSColor.textBackgroundColor))
+            .frame(width: 275, height: 150)
+        }
+        .padding()
     }
     
     private var saveNotes: some View {
         Button(action: {
-            
+            saveNote()
         }) {
            Text("Save Note")
         }
+        .padding()
+    }
+    
+    
+    func saveNote() {
+        
     }
 }
 
