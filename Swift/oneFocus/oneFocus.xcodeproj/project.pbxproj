@@ -10,6 +10,16 @@
 		0B2D62492C9228120006E9AA /* oneFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oneFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0BF114B62CC6EE67002AF161 /* Exceptions for "oneFocus" folder in "oneFocus" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0B2D62482C9228120006E9AA /* oneFocus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0B0BA1D52CBC4CA400330228 /* Note Taker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -18,6 +28,9 @@
 		};
 		0B2D624B2C9228120006E9AA /* oneFocus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0BF114B62CC6EE67002AF161 /* Exceptions for "oneFocus" folder in "oneFocus" target */,
+			);
 			path = oneFocus;
 			sourceTree = "<group>";
 		};
@@ -271,6 +284,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oneFocus/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +312,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oneFocus/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

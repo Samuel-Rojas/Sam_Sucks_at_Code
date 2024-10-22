@@ -100,7 +100,70 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         // Display the notification even when the app is in the foreground
         completionHandler([.banner, .sound])
     }
+    
+    
+//    func application(_ app: NSApplication, open url: URL, options: [NSApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        guard let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems else {
+//            return false
+//        }
+//        
+//        if let code = queryItems.first(where: { $0.name == "code" })?.value {
+//            exchangeAuthorizationCodeForAccessToken(code: code)
+//        }
+//        
+//        return true
+//    }
 
+    
+    
+//    func exchangeAuthorizationCodeForAccessToken(code: String) {
+//        let tokenUrl = URL(string: "https://api.notion.com/v1/oauth/token")!
+//        var request = URLRequest(url: tokenUrl)
+//        request.httpMethod = "POST"
+//        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+//        
+//        //Add This
+//        let clientId = "126d872b-594c-80ea-b1ae-0037bc5635cd"
+//        
+//        //Add this
+//        let clientSecret = "secret_m8OmX486sRuDBFi8fB9gi2VHJEaZDvd5QBFOT0FHu3P"
+//        
+//        //Add this
+//        let redirectUri = "https://api.notion.com/v1/oauth/authorize?client_id=126d872b-594c-80ea-b1ae-0037bc5635cd&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fonefocus%2F%2Fnotion-auth"
+//        let bodyParams = [
+//            "grant_type": "authorization_code",
+//            "code": code,
+//            "redirect_uri": redirectUri,
+//            "client_id": clientId,
+//            "client_secret": clientSecret
+//        ]
+//        
+//        let bodyString = bodyParams.map { "\($0.key)=\($0.value)" }.joined(separator: "&")
+//        request.httpBody = bodyString.data(using: .utf8)
+//        
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            if let error = error {
+//                print("Error: \(error)")
+//                return
+//            }
+//            
+//            if let data = data {
+//                do {
+//                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+//                       let accessToken = json["access_token"] as? String {
+//                        // Save the access token for making future requests
+//                        print("Access Token: \(accessToken)")
+//                    }
+//                } catch {
+//                    print("Failed to parse response: \(error)")
+//                }
+//            }
+//        }
+//        
+//        task.resume()
+//    }
+    
+   
 
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
