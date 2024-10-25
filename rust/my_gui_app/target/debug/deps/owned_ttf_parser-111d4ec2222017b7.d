@@ -1,0 +1,10 @@
+/Users/samuelrojas/Documents/Coding/Sam_Sucks_at_Code/rust/my_gui_app/target/debug/deps/libowned_ttf_parser-111d4ec2222017b7.rmeta: /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/lib.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/convert.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/owned.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/preparse.rs
+
+/Users/samuelrojas/Documents/Coding/Sam_Sucks_at_Code/rust/my_gui_app/target/debug/deps/libowned_ttf_parser-111d4ec2222017b7.rlib: /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/lib.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/convert.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/owned.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/preparse.rs
+
+/Users/samuelrojas/Documents/Coding/Sam_Sucks_at_Code/rust/my_gui_app/target/debug/deps/owned_ttf_parser-111d4ec2222017b7.d: /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/lib.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/convert.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/owned.rs /Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/preparse.rs
+
+/Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/lib.rs:
+/Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/convert.rs:
+/Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/owned.rs:
+/Users/samuelrojas/.cargo/registry/src/index.crates.io-6f17d22bba15001f/owned_ttf_parser-0.25.0/src/preparse.rs:

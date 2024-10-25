@@ -1,0 +1,11 @@
+[package]
+name = "my_gui_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = "0.9"
+
+[[bin]]
+name = "my_gui_app"
+path = "src/my_gui_app"

@@ -1,6 +1,11 @@
 [package]
 name = "calculator"
+path = "src/calculator.rs"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[[bin]]
+name = "calculator"
+path = "src/calculator.rs"
