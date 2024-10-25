@@ -28,14 +28,14 @@ fn conversation(){
 
     println!("Just to confirm, are these the number were working with {} and {}", input_one, input_two);
 
-    println!("y or n");
+    println!("Enter (y) to confirm or (n) for re-entry");
 
     let mut confirmation = String::new();
 
     io::stdin().read_line(&mut confirmation).expect("Failed to read line");
 
 
-    if confirmation == "y" {
+    if confirmation.trim().to_lowercase() == "y" {
         //proceed with logic 
         calculation(num_one, num_two);
     } else {
@@ -44,39 +44,32 @@ fn conversation(){
 }
 
 fn restart_calculator(){
-    println!("Enter with the first integer");
-
-    let mut input_one = String::new();
-
-    io::stdin().read_line(&mut input_one).expect("Failed to read line");
-
-    // let num: f32 = input.trim().parse().expect("Please type a integer!");
-
-    println!("Enter the second integer");
-
-    let mut input_two = String::new();
-
-    io::stdin().read_line(&mut input_two).expect("Failed to read line");
-
-    println!("Just to confirm, are these the number were working with {} and {}", input_one, input_two);
-
-    println!("y or n");
-
-    let mut confirmation = String::new();
-
-    io::stdin().read_line(&mut confirmation).expect("Failed to read line");
+    conversation();
 }
 
 
 fn calculation(one: i32, two: i32){
 
-    // prinln!("What operation, (a), (s), (m), (d)");
+    println!("What is the operation?");
+    println!("(1). Addition");
+    println!("(2). Subtraction");
+    println!("(3). Multiplication");
+    println!("(4). Division");
 
-    // let mut operation = String::new();
 
-    // io::stdin().read_line(&mut opeartion).expect("Failed to read line");
+    let mut operation = String::new();
+    io::stdin().read_line(&mut operation).expect("Failed to read line");
+    let mut operationType: i32 = operation.trim().parse().expect("Please type an integer!");
 
-
+    if operationType == 1{
+        addition(one, two);
+    } else if operationType == 2 {
+        subtraction(one,two);
+    } else if operationType == 3 {
+        multiplication(one,two);
+    } else {
+        division(one,two);
+    }
 
 
 }
@@ -84,5 +77,21 @@ fn calculation(one: i32, two: i32){
 
 fn addition(one: i32, two: i32){
     let sum = one + two;
-    println!("{}", sum);
+    println!("Output: {}", sum);
+}
+
+fn subtraction(one: i32, two: i32){
+    let sum = one - two;
+    println!("Output: {}", sum);
+}
+
+fn multiplication(one: i32, two: i32){
+    let sum = one * two;
+    println!("Output: {}", sum);
+}
+
+fn division(one: i32, two: i32){
+    let sum = one / two;
+    println!("Output: {}", sum);
+
 }
