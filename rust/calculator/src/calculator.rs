@@ -60,9 +60,9 @@ fn calculation(one: i32, two: i32){
 
     if operation_type == 1{
         addition(one, two);
-    } else if operationType == 2 {
+    } else if operation_type == 2 {
         subtraction(one,two);
-    } else if operationType == 3 {
+    } else if operation_type == 3 {
         multiplication(one,two);
     } else {
         division(one,two);
