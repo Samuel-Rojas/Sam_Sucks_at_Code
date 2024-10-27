@@ -12,7 +12,7 @@ struct Quote: Codable {
     let quote: String
     let author: String
     
-    enum CodingKeybs: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case quote = "q"
         case author = "a"
     }
@@ -22,6 +22,7 @@ struct ContentView: View {
     
     @State private var isHovered = false
     @State private var quoteText: String = ""
+    @State private var authorText: String = ""
     
     var body: some View {
         
@@ -46,6 +47,9 @@ struct ContentView: View {
         }
         
         Text(quoteText)
+        if !quoteText.isEmpty {
+            Text("-\(authorText)")
+        }
         
     }
     
@@ -63,6 +67,10 @@ struct ContentView: View {
                 if let data = data {
                     let decoder = JSONDecoder()
                     var quoter: [Quote]? = nil
+                    
+                    if let jsonString = String(data: data, encoding: .utf8){
+                        print("Raw JSON Response: \(jsonString)")
+                    }
                     do {
                         quoter = try decoder.decode([Quote].self, from: data)
                     } catch {
@@ -71,8 +79,14 @@ struct ContentView: View {
                     if let firstQuote = quoter?.first {
                         print("Quote: \(firstQuote.quote)")
                         print("Author: \(firstQuote.author)")
+                        
+                        DispatchQueue.main.async {
+                            quoteText = firstQuote.quote
+                            authorText = firstQuote.author
+                        }
                     }
                     print("Data received: \(data)")
+                    
                 }
             }.resume() // starts the request
         }
