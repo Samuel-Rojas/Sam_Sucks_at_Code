@@ -14,16 +14,16 @@ struct OneFocusApp: App {
     
     var body: some Scene {
         
-//        MenuBarExtra{
-//            Quicky()
-//        } label: {
-//            Text("Quicky")
-//        }
-//        .menuBarExtraStyle(.window)
-        
-        Settings{
-            EmptyView()
+        MenuBarExtra{
+            Quicky()
+        } label: {
+            Text("Quicky")
         }
+        .menuBarExtraStyle(.window)
+        
+//        Settings{
+//            EmptyView()
+//        }
     }
 }
 
