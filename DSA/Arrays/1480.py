@@ -18,3 +18,5 @@ solution = Solution()
 test_nums = [1, 2, 3, 4]
 print("Input array:", test_nums)
 print("Final result:", solution.runningSum(test_nums))
+
+
